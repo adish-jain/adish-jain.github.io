@@ -237,7 +237,7 @@ nav a:focus {
 =================== */
 
 .home-hero {
-	background-image: url(../img/hero-bg.jpg);
+	background-image: url(../img/profile.png);
 	background-size: cover;
 	background-position: center;
 	padding: 10em 0;
@@ -264,7 +264,26 @@ nav a:focus {
 	position: relative;
 }
 
+.home-skills-textbox {
+	background-color: #232323;
+	padding: 4em;
+	width: 100vw;
+	margin-left: -2.5%;;
+	color: #FFF;
+	position: relative;
+}
+
 .home-about-textbox h1 {
+	color: white;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: .75em;
+	background: #232323;
+	padding: 0 .145em;
+}
+
+.home-skills-textbox h1 {
 	color: white;
 	position: absolute;
 	left: 50%;
@@ -287,6 +306,15 @@ nav a:focus {
 		top: .6em;
 		padding: 0 .325em;
 	}
+
+  .home-skills-textbox {
+		padding: 5.5em;
+	}
+
+	.home-skills-textbox h1 {
+		top: .6em;
+		padding: 0 .325em;
+	}
 }
 
 @media (min-width: 60rem) {
@@ -295,7 +323,7 @@ nav a:focus {
 	}
 
 	.home-about {
-		background-image: url(../img/who-we-are.jpg);
+		background-image: url(../img/profile.png);
 		background-repeat: no-repeat;
 		padding-bottom: 10em;
 	}
@@ -311,6 +339,22 @@ nav a:focus {
 	}
 
 	.home-about-textbox h1 {
+		top: .75em;
+		left: 6rem;
+		transform: translateX(0);
+	}
+
+  .home-skills-textbox {
+		width: 50%;
+		padding: 7em;
+		outline-offset: -3.75em;
+		margin-left: -2.5%;
+		top: -5em;
+		text-align: left;
+		box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
+	}
+
+	.home-skills-textbox h1 {
 		top: .75em;
 		left: 6rem;
 		transform: translateX(0);
