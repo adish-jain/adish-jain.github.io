@@ -312,6 +312,11 @@ nav a:focus {
 	padding: 0 .145em;
 }
 
+.home-skills-textbox h2 {
+	color: white;
+  font-size: 30px;
+}
+
 @media (min-width: 25rem) {
 	h1 {
 		font-size: 2rem;
