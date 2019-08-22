@@ -13,7 +13,11 @@ body {
 
 img {
 	max-width: 100%;
-	height: auto;
+	height: 100;
+  width: 100;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius: 8px;
 }
 
 .container {
@@ -48,6 +52,10 @@ footer::after {
 	float: left;
 }
 
+.col-2 {
+	width: 33.333334%;
+	float: left;
+}
 
 @media (min-width: 40rem) {
 
@@ -70,8 +78,12 @@ footer::after {
 	}
 
 	.col-1 {
-		width: 16.6666%;
+		width: 25%;
 	}
+
+  .col-2 {
+    width: 10%;
+  }
 }
 
 
@@ -117,7 +129,19 @@ p:last-of-type {
 .unstyled-list {
 	margin: 0;
 	padding: 0;
-	list-style-type: none;
+  list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover
+{
+     color:#00A0C6;
+     text-decoration:none;
+     cursor:pointer;
 }
 
 @media (min-width:60rem) {
@@ -200,7 +224,6 @@ header {
 nav ul {
 	margin: 0;
 	padding: 0;
-	list-style: none;
 }
 
 nav li {
@@ -254,22 +277,13 @@ nav a:focus {
 
 /* hero-home
 =================== */
-
+/*Controls the BOXES and their colors and positions*/
 .home-about-textbox {
-	background-color: #232323;
+	background-color: #6D9CD9;
 	padding: 4em;
 	width: 100vw;
 	margin-left: -2.5%;;
-	color: #FFF;
-	position: relative;
-}
-
-.home-skills-textbox {
-	background-color: #232323;
-	padding: 4em;
-	width: 100vw;
-	margin-left: -5%;;
-	color: #FFF;
+	color: white;
 	position: relative;
 }
 
@@ -279,17 +293,26 @@ nav a:focus {
 	left: 50%;
 	transform: translateX(-50%);
 	top: .75em;
-	background: #232323;
+	//background: #232323;
 	padding: 0 .145em;
 }
 
+.home-skills-textbox {
+	background-color: white;
+	padding: 4em;
+	width: 100vw;
+	margin-left: -5%;;
+	color: black;
+	position: relative;
+}
+
 .home-skills-textbox h1 {
-	color: white;
+	color: black;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
 	top: .75em;
-	background: #232323;
+	background: white;
 	padding: 0 .145em;
 }
 
@@ -323,17 +346,17 @@ nav a:focus {
 	}
 
 	.home-about {
-		background-image: url(../img/profile.png);
+		//background-image: url(../img/profile.png);
 		background-repeat: no-repeat;
-		padding-bottom: 10em;
+		//padding-bottom: 10em;
     margin-left: -30%
 	}
 
 	.home-about-textbox {
-		width: 100%;
+		width: 120%;
 		padding: 7em;
 		outline-offset: 0em;
-		margin-left: 27%;
+		margin-left: 0%;
 		top: 0em;
 		text-align: left;
 		box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
@@ -341,16 +364,17 @@ nav a:focus {
 
 	.home-about-textbox h1 {
 		top: .75em;
-		left: 3rem;
+		left: 6rem;
 		transform: translateX(0);
 	}
 
   .home-skills-textbox {
-		width: 50%;
-		padding: 7em;
-		outline-offset: -3.75em;
-		margin-left: -2.5%;
-		top: -5em;
+    width: 160%;
+		padding: 15em;
+    padding-top: 8em;
+		outline-offset: 0em;
+		margin-left: -30%;
+		top: 0em;
 		text-align: left;
 		box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
 	}
@@ -370,7 +394,7 @@ nav a:focus {
 =================== */
 
 .portfolio {
-	margin: 3em 0 0;
+	margin: 6em 0 0;
 }
 
 .port-item {
@@ -380,6 +404,9 @@ nav a:focus {
 
 .port-item img {
 	display: block;
+  height: 500;
+  width: 500;
+  border-radius: 8px;
 }
 
 .port-desc {
@@ -390,7 +417,7 @@ nav a:focus {
 	right: 0em;
 	color: white;
 	background: rgba(0,0,0,.6);
-	padding-bottom: 2em;
+	padding-bottom: 4em;
 }
 
 .port-desc p {
