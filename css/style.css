@@ -175,13 +175,13 @@ a:hover
 }
 
 .button-accent {
-	color: black;
-	border-color: black;
+	color: white;
+	border-color: white;
 }
 
 .button-accent:hover,
 .button-accent:focus {
-	background: black;
+	background: white;
 	color: black;
 }
 
@@ -372,7 +372,6 @@ nav a:focus {
 		margin-left: -30%;
 		top: 0em;
 		text-align: left;
-		box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
 	}
 
 	.home-skills-textbox h1 {
@@ -396,6 +395,16 @@ nav a:focus {
 }
 
 .portfolio h1 {
+	color: black;
+	position: relative;
+	left: 19%;
+	transform: translateX(-50%);
+	top: .75em;
+	background: white;
+	padding: 0 .145em;
+}
+
+.portfolio h2 {
 	color: black;
 	position: relative;
 	left: 19%;
