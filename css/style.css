@@ -391,6 +391,8 @@ nav a:focus {
 =================== */
 
 .portfolio {
+	align-items: center;
+	justify-content: center;
 	max-width: 1200px;
 	width: 90%;
 	margin: 2em auto;
