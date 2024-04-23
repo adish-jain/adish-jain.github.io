@@ -365,6 +365,18 @@ nav a:focus {
     //padding-bottom: 10em;
   }
 
+  .home-skills {
+    //background-image: url(img/profile.png);
+    background-repeat: no-repeat;
+    //padding-bottom: 10em;
+  }
+
+  .home-education {
+    //background-image: url(img/profile.png);
+    background-repeat: no-repeat;
+    //padding-bottom: 10em;
+  }
+
   .home-about-textbox {
     width: 100%;
     padding: 7em;
